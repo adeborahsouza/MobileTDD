@@ -6,10 +6,12 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import br.com.rsinet.hub.advantage_tdd.AdvantageMobileTDD.appModule.Register_Action;
+import br.com.rsinet.hub.advantage_tdd.AdvantageMobileTDD.appModule.SearchClick_Action;
+import br.com.rsinet.hub.advantage_tdd.AdvantageMobileTDD.appModule.SearchHome_Action;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
-public class Register_Test {
+public class Search_Test {
 	private static AndroidDriver<MobileElement> driver;
 
 	@BeforeClass
@@ -19,7 +21,7 @@ public class Register_Test {
 
 	@Test
 	public void RegisterValid() throws InterruptedException {
-		Register_Action.registrar(driver);
+		SearchHome_Action.pesquisaLupa(driver);
 	}
 
 	@AfterClass

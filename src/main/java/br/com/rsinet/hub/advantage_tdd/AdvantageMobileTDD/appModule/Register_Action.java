@@ -1,19 +1,29 @@
 package br.com.rsinet.hub.advantage_tdd.AdvantageMobileTDD.appModule;
 
+import java.time.Duration;
+
 import br.com.rsinet.hub.advantage_tdd.AdvantageMobileTDD.pageObjects.Home_Page;
 import br.com.rsinet.hub.advantage_tdd.AdvantageMobileTDD.pageObjects.Register_Page;
 import br.com.rsinet.hub.advantage_tdd.AdvantageMobileTDD.util.Constant;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.WaitOptions;
 
 public class Register_Action {
 
+	static TouchAction action;
+
 	public static void registrar(AndroidDriver<MobileElement> driver) throws InterruptedException {
-		Thread.sleep(3000);
+		action = new TouchAction(driver);
+
+		
 		Home_Page.menuIcon(driver).click();
 
+		action.waitAction(WaitOptions.waitOptions(Duration.ofMillis(4000))).perform();
 		Home_Page.loginIcon(driver).click();
 
+		action.waitAction(WaitOptions.waitOptions(Duration.ofMillis(4000))).perform();
 		Home_Page.registerIcon(driver).click();
 
 		Register_Page.bxUsername(driver).sendKeys(Constant.user);
