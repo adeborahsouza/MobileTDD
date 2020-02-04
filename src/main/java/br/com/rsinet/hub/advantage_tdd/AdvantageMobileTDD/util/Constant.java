@@ -25,7 +25,7 @@ public class Constant {
 
 	public static final String city = "Osasco";
 
-	public static final String address = "Rua Joaquim Rodrigues, 24";
+	public static final String address = "Rua Joaquim";
 
 	public static final String state = "São Paulo";
 
