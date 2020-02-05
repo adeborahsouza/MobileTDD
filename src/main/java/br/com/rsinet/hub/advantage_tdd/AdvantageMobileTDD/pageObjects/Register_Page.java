@@ -60,7 +60,8 @@ public class Register_Page {
 	}
 
 	public static MobileElement bxCity(AndroidDriver<?> driver) {
-		return (MobileElement) driver.findElementByXPath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText");
+		return (MobileElement) driver.findElementByXPath(
+				"//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText");
 	}
 
 	public static MobileElement bxCep(AndroidDriver<?> driver) {
@@ -70,6 +71,11 @@ public class Register_Page {
 
 	public static MobileElement btnConfRegister(AndroidDriver<?> driver) {
 		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/buttonRegister");
+
+	}
+
+	public static MobileElement bxAgree(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/checkBoxAgreeConditions");
 
 	}
 

@@ -29,8 +29,7 @@ public class DriverManager {
 	public static void closeApp(WebDriver driver) {
 		if (driver != null)
 
-			driver.close();
-		driver.quit();
+			((AndroidDriver) driver).quit();
 
 	}
 }

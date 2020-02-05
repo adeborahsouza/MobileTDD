@@ -9,8 +9,19 @@ public class Product_Page {
 
 	public static MobileElement prodFone(AndroidDriver<?> driver) {
 		return (MobileElement) driver.findElementByXPath(
-				"[{\"key\":\"elementId\",\"value\":\"1d887aa3-1dad-43e6-98ae-24249d2e7bb9\",\"name\":\"elementId\"},{\"key\":\"index\",\"value\":\"0\",\"name\":\"index\"},{\"key\":\"package\",\"value\":\"com.Advantage.aShopping\",\"name\":\"package\"},{\"key\":\"class\",\"value\":\"android.widget.RelativeLayout\",\"name\":\"class\"},{\"key\":\"text\",\"value\":\"\",\"name\":\"text\"},{\"key\":\"resource-id\",\"value\":\"com.Advantage.aShopping:id/RelativeLayoutProductControl\",\"name\":\"resource-id\"},{\"key\":\"checkable\",\"value\":\"false\",\"name\":\"checkable\"},{\"key\":\"checked\",\"value\":\"false\",\"name\":\"checked\"},{\"key\":\"clickable\",\"value\":\"true\",\"name\":\"clickable\"},{\"key\":\"enabled\",\"value\":\"true\",\"name\":\"enabled\"},{\"key\":\"focusable\",\"value\":\"false\",\"name\":\"focusable\"},{\"key\":\"focused\",\"value\":\"false\",\"name\":\"focused\"},{\"key\":\"long-clickable\",\"value\":\"false\",\"name\":\"long-clickable\"},{\"key\":\"password\",\"value\":\"false\",\"name\":\"password\"},{\"key\":\"scrollable\",\"value\":\"false\",\"name\":\"scrollable\"},{\"key\":\"selected\",\"value\":\"false\",\"name\":\"selected\"},{\"key\":\"bounds\",\"value\":\"[0,349][540,1017]\",\"name\":\"bounds\"},{\"key\":\"displayed\",\"value\":\"true\",\"name\":\"displayed\"}]");
+				"//android.widget.RelativeLayout[@content-desc=\"Headphones\"]/android.widget.LinearLayout/android.widget.GridView/android.widget.RelativeLayout[1]");
 	}
-	
+
+	public static MobileElement prodNotebook(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/RelativeLayoutProductControl");
+	}
+
+	public static MobileElement produtosTitle(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/textViewProductName");
+	}
+
+	public static MobileElement noResults(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/textViewNoProductsToShow");
+	}
 
 }
