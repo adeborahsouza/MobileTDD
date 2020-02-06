@@ -73,7 +73,6 @@ public class Register_Action {
 				.click();
 		action.waitAction(WaitOptions.waitOptions(Duration.ofMillis(4000))).perform();
 		Home_Page.menuIcon(driver).click();
-		
 
 	}
 
@@ -130,15 +129,13 @@ public class Register_Action {
 		Register_Page.bxCity(driver).sendKeys(Constant.city);
 
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
-		
+
 		driver.findElementByAndroidUIAutomator(
 				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""
 						+ "REGISTER" + "\").instance(0))")
 				.click();
 
 		Register_Page.bxAgree(driver).click();
-		
-		
 
 	}
 }
