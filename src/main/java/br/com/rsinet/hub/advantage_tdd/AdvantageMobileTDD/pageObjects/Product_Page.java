@@ -24,4 +24,41 @@ public class Product_Page {
 		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/textViewNoProductsToShow");
 	}
 
+	public static MobileElement filter(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/imageViewFilter");
+	}
+
+	public static MobileElement bx_compatibility(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementByXPath(
+				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ExpandableListView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.TextView");
+	}
+
+	public static MobileElement comp_option(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementByXPath(
+				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ExpandableListView/android.widget.LinearLayout[5]/android.widget.LinearLayout/android.widget.TextView");
+	}
+
+	public static MobileElement bx_conector(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementByXPath(
+				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ExpandableListView/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.TextView");
+	}
+
+	public static MobileElement conector_option(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementByXPath(
+				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ExpandableListView/android.widget.LinearLayout[4]/android.widget.LinearLayout/android.widget.TextView");
+	}
+
+	public static MobileElement bx_color(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementByXPath(
+				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ExpandableListView/android.widget.LinearLayout[7]/android.widget.LinearLayout/android.widget.TextView");
+	}
+
+	public static MobileElement color_option(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementByXPath(
+				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ExpandableListView/android.widget.LinearLayout[6]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.view.View[2]");
+	}
+
+	public static MobileElement bx_apply(AndroidDriver<?> driver) {
+		return (MobileElement) driver.findElementById("com.Advantage.aShopping:id/textViewApply");
+	}
 }

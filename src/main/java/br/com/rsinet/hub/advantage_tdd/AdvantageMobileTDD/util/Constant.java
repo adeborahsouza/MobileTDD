@@ -2,12 +2,11 @@ package br.com.rsinet.hub.advantage_tdd.AdvantageMobileTDD.util;
 
 public class Constant {
 
+	public static String Path_TestData = "target\\ExcelFile\\";
 
-	public static final String Path_TestData = "C:\\Users\\deborah.souza\\eclipse-workspace\\ProvaTDD\\target\\";
+	public static String File_TestData = "Produtos.xlsx";
 
-	public static final String File_TestData = "Produtos.xlsx";
-
-	public static final String user = "Celsinho10";
+	public static final String user = "adbrhsza090714";
 
 	public static final String email = "adeborahsouza@gmail.com";
 
